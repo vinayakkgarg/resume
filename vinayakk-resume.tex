@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Vinayakk Garg
+% Adapted from: Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Vinayakk Garg} & Email : \href{mailto:vinayakk.garg99@gmail.com}{\color{blue}vinayakk.garg99@gmail.com}\\
+  \href{https://github.com/vinayakkgarg}{\color{blue}github.com/vinayakkgarg} & Mobile : +91-9871838880 \\\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharati Vidyapeeth's College of Engineering (GGSIPU) }{New Delhi, India}
+      {Bachelor of Technology in Information Technology;  GPA: 8.3/10.0}{Expected May 2021}{
+      \resumeItemNoBullet{Relevant Coursework}{Introduction to Programming, Data Structures using C, Database Management Systems, Switching theory \& Logic Design, Computer Organisation \& Architecture, Object Oriented Programming using C++}
+    }
+    \resumeSubheading
+      {Montfort Sr. Sec. School}{New Delhi, India}
+      {PCM, Computer Science; Percentage: 94.2 }{April 2003 - May 2017}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Python, C, C++, HTML,  CSS, JavaScript}
+     \hfill
+     \textbf{Technologies}{: Arduino, Raspberry Pi, Git, GitHub, ROS}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Libraries}{: Flask, TensorFlow, Keras, Scikit-Learn, Numpy, Pandas, Jupyter, OpenCV, Matplotlib, TKinter}
+    }
+\resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------------
+\shorterSection{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SUEZ India}{New Delhi, India}
+      {Software  Development Intern}{June 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Talking Network}
+          {A utility tool to facilitate studying of pipeline diagrams by using voice feedback about parameters of pipelines.
+          \begin{itemize}
+              \item Worked on a utility tool to promote usability and make readability of blueprint of pipeline networks easier.
+              \item Used Google Voice API to do text-to-speech conversion and fetched dynamically changing data in an Android App from a central server. 
+          \end{itemize}
+          }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/vinayakkgarg/ROS_PacBOT}{\color{blue}ROS\_PacBOT (ongoing)}}
+      {A Project developed using the Robotics Operating System. The bots are simulated using the Gazebo Simulator and trained to play the Pacman game using Reinforcement Learning techniques.}
+    \resumeSubItem{\href{https://github.com/parulagg27/CraSOS}{\color{blue}CraSOS}}
+      {CraSOS is a standalone device with the capabilities of accident prevention, detection and recovery. 
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Rider Rating on basis of speed of riding, braking intensity etc.
+            \item Camera on helmet used to click pictures of overspeeding and oddly behaving cars and their number plates.
+            \item On collision detection, SOS message(containing location, medical info) generated and sent to helpline numbers and 3 chosen emergency contact numbers.
+            \item Information broadcasted using BLE Beacon \& nearby notifications to call for all help possible.
+        \end{itemize}
+      }
+    \resumeSubItem{Real Time Object Detection}
+      {Real time all as well as custom object detction on live feed from a USB webcam achieving 15-20 fps.}
+    \resumeSubItem{\href{https://github.com/vinayakkgarg/whos-cuter}{\color{blue}Who's Cuter}}
+      {A Cats VS Dogs classifier implemented using CNN from scratch with a test set accuracy of 81\% on a dataset of 8000 training images.}
+    \resumeSubItem{\href{https://github.com/vinayakkgarg/Lane-Detection-App}{\color{blue}Lane-Detection-App}}
+     {A lane lines detection software to determine drivable areas for autonomous robots.}
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER EXPERIENCE-----------------
+\shorterSection{Volunteer Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Head, RNIS, Developer Student Clubs by Google Developers - BVP}{New Delhi, India}
+      {Robotics and Intelligent Systems}{May 2019 - Present}
+      \vspace{-5pt}
+        \begin{itemize}[noitemsep]
+            \item Heading a team of 10 technical executives and 300 student members
+            \item Responsible for organising events and mentor workshops in the field of robotics and machine learning
+            \item Organised and Mentored a Hardware Hackathon on Arduino Day 2018 with 40+ participating teams from 8 different colleges
+            \item Judged an intra-college Ideathon event with 20+ participating teams.
+            
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------Addtional Experience & Achievements-----------------
+\shorterSection{Additional Experience \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Finalist: SKYHACK}{August 2018}
+      {Qualified for the Finals among the top 5 teams nationally for the
+Hackathon organised by the Chhattisgarh Government in Raipur.}{AIC@36Inc}
+    \resumeSubheading
+      {Third: Hack@BVP 2.0}{October 2018}
+      {Secured Third position at BVCOE\rq s Hackathon organised by CSE
+department.}{CSE DEPT, BVCOE}
+    \resumeSubheading
+      {Winner: Technovation at Innerve}{October 2017, 2018}
+      {Won the first position at IGDTUW\rq s Techfest in the
+Ideathon event for two years consecutively}{IGDTUW}
+    \resumeSubheading
+      {Second: Ideathon at Innovision}{October 2018}
+      {Won the second position at NSUT\rq s Techfest in the
+Ideathon event.}{E-Cell, NSUT}
+    \resumeSubheading
+      {Winner: Robo Soccer}{2017}
+      {Won the first position in Robo Soccer at IGDTUW, MSIT, BVCOE, CIC.}{IGDTUW, MSIT, BVCOE, CIC}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
